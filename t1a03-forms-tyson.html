@@ -15,20 +15,16 @@ File:<input type
 reset:
 Submit (advanced)
 
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
+Button: <input type=button value="click" onClick="{
+         document.getElementById('myArea01').value = 'Cool'
+       }"><br>
+  Textarea:<br>
+  <textarea id="mySelect01" size=2 onChange="{
+      document.getElementById('myArea01').value =
+    document.getElementById('mySelect').value
+    }'>
+    <option value='myDog'>Dog
+    <option value='myCat'>Cat
+    <option value='myMouse'>Mouse
+    </select>
 </forms>
