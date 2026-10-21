@@ -10,3 +10,7 @@ Nothing: <inpput type=text id="myText01" value="useless atm"> <br>
       constructor(passName, passAge) {
           this.myName = passName;
           this.myAge = passAge
+      }
+      myShow() {
+        document.getElementById('myDiv01').innerHTML = 'hello' + this.myName + 'you are' + this.myAge + 'years old' <br>
+    }
