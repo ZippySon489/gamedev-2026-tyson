@@ -3,14 +3,20 @@
 <a href=""> <!--put js classes ref here-->
 
 <h4> example working code </h4>
-Nothing: <inpput type=text id="myText01" value="useless atm"> <br>
+Nothing: <input type=text id="myText01" value="useless atm"> <br>
 <input type=button value="example class set" onClick={
 
   class myAnimal {
       constructor(passName, passAge) {
           this.myName = passName;
-          this.myAge = passAge
+          this.myAge = passAge;
       }
-      myShow() {
+      myShow(){
         document.getElementById('myDiv01').innerHTML = 'hello' + this.myName + 'you are' + this.myAge + 'years old' <br>
     }
+} <!--end class myAnimal--> 
+
+
+  myDog = new myAnimal('Snickers', 5)
+  myDog.myShow()
+  }">
