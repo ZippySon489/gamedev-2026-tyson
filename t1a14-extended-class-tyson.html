@@ -1,13 +1,31 @@
 <script>
 //using script tag, make the class global
 class myAnimal {
-    this.myName
-    this.myAge
+    constructor(passName, passAge) {
+        this.myName = passAge;
+        this.myAge = passAge;
 }
-
-
-
-
-
+myShow(){
+    document.getElementById('myDiv01').innerHTML = "Hello '+ this.myName+'<br>'
+    }
+} //end class
   
 </script>
+
+<h2 align=center>t1a14-extend-class-tyson.html</h2>
+Extending pre-existing class<br>
+
+<h4> Example working class </h4>
+
+<input type=button value="example class set and show class animal" onClick="{
+
+    let myDog = new myAnimal('Snickers', 5)
+    myDog.myShow()
+
+}">
+
+<h4> Example extending class code </h4>
+Nothing: <input type=text id="mytext" value="useless"><br>
+
+    
+
