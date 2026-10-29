@@ -27,5 +27,19 @@ Extending pre-existing class<br>
 <h4> Example extending class code </h4>
 Nothing: <input type=text id="mytext" value="useless"><br>
 
+<input type=text id="mytext" value="example extend class animal" onClick="{
+
+class myCat extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat<br>'
+        }
+    } 
+
+
+    let myPet = new myCat('fluffy', 14)
+    myPet.myShow()
+
+}"> 
     
 
